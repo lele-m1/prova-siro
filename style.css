@@ -1,0 +1,1588 @@
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: #D7D5CB;
+    height: 100vh;
+}
+
+a,li,ul{text-decoration: none; list-style: none; color: inherit;}
+
+p{font-size: 25px;}
+h1{font-size: 76.29px;}
+h2{font-size: 61.4px ;}
+h3{font-size: 48.83px;}
+h4{font-size: 39.06px;}
+h5{font-size: 32px;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background: #6A6A62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+    color: #fff;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 3px 0;
+}
+
+.menu-opened {
+    display: block;
+}
+
+
+/* hero */
+.hero {
+    background-image: url('img/hero.png');
+    background-size: cover;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+
+.hero p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #55B14E;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #fff;
+    color: black;
+}
+
+.container {
+    background: #D7D5CB;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.grid-item {
+    text-align: center; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+}
+
+
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Colore di sfondo semitrasparente */
+    opacity: 0; /* Inizialmente nascosto */
+    transition: opacity 0.2s ease-in-out;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;}
+
+
+/* footer */
+footer {
+    height: 20vh;
+    background-color: #6A6A62;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-end;
+
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 50%; 
+    box-sizing: border-box; 
+    align-items: flex-end;
+}
+
+.footer-column p {
+    margin-top: 0;
+}
+.footer-column h4 {
+    margin-top: 0;
+    padding: 0px 20px 0px 20px ;
+}
+
+
+.footerio{
+    display: grid;
+}
+
+
+
+
+/* scopri di più */
+
+.hero h1{
+    text-align: center;
+}
+
+.bodytext{
+    background-color: #E3E1D4;
+    padding: 40px 80px 40px 80px ;
+}
+.bodytext p{
+    font-size: 18px;
+} 
+
+.infografica2 img {
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+    padding-bottom: 20px;
+}
+
+
+/* Enzo Mari */
+
+
+
+.heroenzo{
+    background: url(img/enzomarihero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.heroenzo h1{
+    font-family: Inria Serif;
+}
+.enzocard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.enzocard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.enzocard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+
+}
+    
+
+.enzoinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+
+/* Gio Ponti */
+
+
+
+.herogio{
+    background: url(img/hiopontihero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.herogio h1{
+    font-family: Inria Serif;
+}
+.giocard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.giocard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.giocard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+
+}
+    
+
+.gioinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+
+/* Gaetano Pesce */
+
+
+
+.heropesce{
+    background: url(img/pescehero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.heropesce h1{
+    font-family: Inria Serif;
+}
+.pescecard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.pescecard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.pescecard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+
+}
+    
+
+.pesceinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+
+/*Ron Arad */
+
+
+
+.heroarad{
+    background: url(img/aradhero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.heroarad h1{
+    font-family: Inria Serif;
+}
+.aradcard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.aradcard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.aradcard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+
+}
+    
+
+.aradinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+
+/* Ettore Sottsass*/
+
+
+
+.heroettore{
+    background: url(img/Ronhero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.heroettore h1{
+    font-family: Inria Serif;
+}
+.ettorecard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.ettorecard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.ettorecard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+
+}
+    
+
+.ettoreinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+/* Joe Colombo */
+
+
+
+.herojoe{
+    background: url(img/joehero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.herojoe h1{
+    font-family: Inria Serif;
+}
+.joecard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.joecard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.joecard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+    
+
+}
+    
+
+.joeinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+/* Philippe Starck */
+
+
+
+.herostarck{
+    background: url(img/starckhero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.herostarck h1{
+    font-family: Inria Serif;
+}
+.starckcard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.starckcard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.starckcard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+
+}
+    
+
+.starckinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+/* Naoto Fukasawa */
+
+
+
+.heronaoto{
+    background: url(img/naotohero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.heronaoto h1{
+    font-family: Inria Serif;
+}
+.naotocard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.naotocard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.naotocard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+
+}
+    
+
+.naotoinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+/* Vico Magistretti*/
+
+
+
+.herovico{
+    background: url(img/vicohero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.herovico h1{
+    font-family: Inria Serif;
+}
+.vicocard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.vicocard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.vicocard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+
+}
+    
+
+.vicoinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+
+/* Achille castiglioni */
+
+
+
+.heroachille{
+    background: url(img/achillehero.png), lightgray 0px -96.988px / 100% 222.394% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.heroachille h1{
+    font-family: Inria Serif;
+}
+.achillecard1{
+    display: flex;
+    background-color:#E3E1D4;
+    align-items: center;
+}
+.achillecard1 img{
+    max-width: 50%;
+    width: auto;
+    padding: 40px;
+
+}
+.achillecard1 p{
+    flex: 1;
+    padding: 40px;
+    max-width: 50%;
+
+}
+    
+.achilleinfo {
+    padding: 60px;
+    background-color: #D7D5CB;
+    text-align: center;
+    font-family: Inria Serif;
+}
+
+/* Contatti */
+
+.contattitit{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: #E3E1D4;
+    display: flex; 
+    flex-direction: column;
+}
+
+.contattitit h3{
+    padding: 40px 100px 40px 100px;
+}
+.infocont{
+    display: flex;
+    justify-content: center;
+}
+
+.infocont p{
+    padding: 40px 100px 40px 100px;
+
+}
+
+.infocont span{
+    background-color: black;
+    width: 4px;
+    height: 100px;
+    padding-left: 0px;
+    margin: 40px 0px 0px 100px;
+
+}
+
+/* Newsletter */
+
+.cta-buttonr {
+    background: #55B14E;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 40px;
+    text-align: center;
+    margin: -10px 100px ;
+}
+
+.contattitite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    padding: 100px; 
+    height: 65vh;
+    background-color: #E3E1D4;
+    text-align: center; 
+}
+
+.contattitite h3 {
+    padding: 20px;
+    margin-bottom: 0px; 
+}
+
+.infoconte {
+    display: flex;
+    align-items: center; 
+    margin-top: 20px; 
+    text-align: left; 
+}
+
+.infoconte p {
+    padding: 0;
+    margin: 0; 
+    margin-left: 20px;
+}
+
+.infoconte a {
+    background: #55B14E;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.infoconte span {
+    background-color: black;
+    width: 4px;
+    height: 100px;
+    margin: 0 20px;
+}
+
+/* registrati */
+
+.registrazione-newsletter {
+    height: 75vh;
+    background-color: #E3E1D4;
+    padding: 50px;
+    text-align: center;
+}
+
+.registrazione-newsletter h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.cta-button {
+    background-color: none;
+}
+
+.cta-button {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.privacypolicy1{
+    background-color: #D7D5CB;
+}
+
+.privacypolicy1 p{
+    padding: 40px;
+}
+.privacypolicy1 h5{
+    padding: 40px;
+}
+
+.privacypolicy1 h3{
+    padding: 40px;
+}
+
+.privacypolicy2{
+    background-color: #D7D5CB;
+    height: 90vh;
+    align-items: flex-end;
+}
+
+.privacypolicy2 p{
+    padding: 20px;
+}
+.privacypolicy2 h5{
+    padding: 20px;
+}
+
+.privacypolicy2 h3{
+    padding: 20px;
+}
+
+.privacypolicy11{
+    background-color: #D7D5CB;
+}
+
+.privacypolicy11 p{
+    padding: 40px;
+}
+.privacypolicy11 h5{
+    padding: 40px;
+}
+
+.privacypolicy11 h3{
+    padding: 40px;
+}
+
+/* DESIGNERS */
+
+.designers {
+    background-color: #D7D5CB;
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.designers li{
+    list-style: none;
+    padding: 20px;
+
+}
+
+.designers a{
+    padding: 20px;
+    text-decoration: none;
+    color: #333; /
+
+}
+
+.designers h3{
+    padding: 40px;
+}
+  
+  
+
+/* Smedia querry */
+@media (max-width: 1440px) {
+    p{font-size: 18px;}
+    h1{font-size: 54.93px;}
+    h2{font-size: 43.95px ;}
+    h3{font-size: 35.16px;}
+    h4{font-size: 28.13px;}
+
+    
+    header {
+        text-align: center;
+    }
+
+    nav li {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+
+    .hero p {
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .hero h1{
+        text-align: center;
+    }
+
+    .cta-button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .bodytext p{
+        margin-bottom: 20px;
+    } 
+
+    .bodytext{
+        background-color: #E3E1D4;
+        padding: 20px 40px 20px 40px ;
+    }
+
+    .footer-column {
+        max-width: 100%; /* Occupa l'intera larghezza */
+        margin-bottom: 20px; }
+
+    /* ------- */
+    .enzocard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .enzocard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .enzocard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .enzoinfo{
+        padding: 20px;
+    }
+
+    .heroenzo{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .heroenzo h1{
+        font-family: Inria Serif;
+    }
+
+    /* ------- */
+
+    .giocard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .giocard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .giocard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .gioinfo{
+        padding: 20px;
+    }
+
+    .herogio{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .herogio h1{
+        font-family: Inria Serif;
+    }
+
+    /* ------- */
+
+    .pescecard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .pescecard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .pescecard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .pesceinfo{
+        padding: 20px;
+    }
+
+    .heropesce{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .heropesce h1{
+        font-family: Inria Serif;
+    }
+
+    /* ------- */
+
+    .aradcard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .aradard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .aradcard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .aradinfo{
+        padding: 20px;
+    }
+
+    .heroarad{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .heroarad h1{
+        font-family: Inria Serif;
+    }
+
+        /* ------- */
+
+    .ettorecard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .ettoreard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .ettorecard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .ettoreinfo{
+        padding: 20px;
+    }
+
+    .heroettore{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .heroettore h1{
+        font-family: Inria Serif;
+    }
+
+    /* ------- */
+
+    .joecard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .joecard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .joecard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .joeinfo{
+        padding: 20px;
+    }
+
+    .herojoe{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .herojoe h1{
+        font-family: Inria Serif;
+    }
+
+    /* ------- */
+
+    
+    .starckcard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .starckcard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .starckcard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .starckinfo{
+        padding: 20px;
+    }
+
+    .herostarck{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .herostarck h1{
+        font-family: Inria Serif;
+    }
+
+     /* ------- */
+
+    
+     .naotocard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .naotocard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .naotocard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .naotoinfo{
+        padding: 20px;
+    }
+
+    .heronaoto{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .heronaoto h1{
+        font-family: Inria Serif;
+    }
+
+
+     /* ------- */
+
+    
+     .vicocard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .vicocard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .vicocard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .vicoinfo{
+        padding: 20px;
+    }
+
+    .herovico{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .herovico h1{
+        font-family: Inria Serif;
+    }
+    
+     /* ------- */
+
+    
+     .achillecard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .achillecard1 img {
+        max-width: 100%; 
+        padding: 20px 20px 20px 20px;
+    }
+
+    .achillecard1 p {
+        max-width: 100%; 
+        padding: 20px 20px 40px 20px;
+        text-align: center; 
+    }
+
+    .achilleinfo{
+        padding: 20px;
+    }
+
+    .heroachille{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .heroachille h1{
+        font-family: Inria Serif;
+    }
+
+
+    .designers {
+        background-color: #D7D5CB;
+        padding: 20px;
+        height: 100vh;
+    }
+
+    
+}
+
+/* Smedia querry */
+@media (max-width: 728px) {
+    a,li,ul{font-size: 14px;}
+
+    p{font-size: 14px;}
+    h1{font-size: 42.72px;}
+    h2{font-size: 34.18px ;}
+    h3{font-size: 25.34px;}
+    h4{font-size: 21.88px;}
+
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: #6A6A62;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+
+
+    nav li {
+        margin: 10px 0;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-opened .menu-toggle {
+        display: none;
+    }
+
+    .menu-opened nav ul {
+        display: block;
+    }
+
+    
+
+    .hero p {
+        margin-bottom: 5px;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .hero h1{
+        text-align: center;
+    }
+
+    .cta-button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .bodytext p{
+        margin-bottom: 5px;
+    } 
+
+    .bodytext{
+        background-color: #E3E1D4;
+        padding: 10px 20px 10px 20px ;
+    }
+
+    /* ------- */
+
+    .enzocard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .enzocard1 img {
+        max-width: 100%; 
+    }
+
+    .enzocard1 p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .enzoinfo{
+        padding: 10px;
+    }
+
+    .heroenzo{
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .heroenzo h1{
+        font-family: Inria Serif;
+    }
+
+        /* ------- */
+
+    .giocard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .giocard1 img {
+        max-width: 100%; 
+    }
+
+    .giocard1 p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .gioinfo{
+        padding: 10px;
+    }
+
+    .herogio{
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .herogio h1{
+        font-family: Inria Serif;
+    }
+
+        /* ------- */
+
+    .pescecard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .pescecard1 img {
+        max-width: 100%; 
+    }
+
+    .pescecard1 p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .pesceinfo{
+        padding: 10px;
+    }
+
+    .heropesce{
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .heropesce h1{
+        font-family: Inria Serif;
+    }
+
+        /* ------- */
+
+
+    .aradcard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .aradcard1 img {
+        max-width: 100%; 
+    }
+
+    .aradcard1 p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .aradinfo{
+        padding: 10px;
+    }
+
+    .heroarad{
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .heroarad h1{
+        font-family: Inria Serif;
+    }
+
+        /* ------- */
+
+    .ettorecard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .ettorecard1 img {
+        max-width: 100%; 
+    }
+
+    .ettorecard1 p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .ettoreinfo{
+        padding: 10px;
+    }
+
+    .heroettore{
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .heroettore h1{
+        font-family: Inria Serif;
+    }
+
+        /* ------- */
+        
+    .starckcard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .starckcard1 img {
+        max-width: 100%; 
+    }
+
+    .starckcard1 p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .starckinfo{
+        padding: 10px;
+    }
+
+    .herostarck{
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .herostarck h1{
+        font-family: Inria Serif;
+    }
+        
+
+      /* ------- */
+        
+    .naotocard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .naotocard1 img {
+        max-width: 100%; 
+    }
+
+    .naotocard1 p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .naotoinfo{
+        padding: 10px;
+    }
+
+    .heronaoto{
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .heronaoto h1{
+        font-family: Inria Serif;
+    }
+    
+      /* ------- */
+        
+      .vicocard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .vicocard1 img {
+        max-width: 100%; 
+    }
+
+    .vicocard1 p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .vicoinfo{
+        padding: 10px;
+    }
+
+    .herovico{
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .herovico h1{
+        font-family: Inria Serif;
+    }
+
+
+          /* ------- */
+        
+    .achillecard1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .achillecard1 img {
+        max-width: 100%; 
+    }
+
+    .achillecard1 p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .achilleinfo{
+        padding: 10px;
+    }
+
+    .heroachille{
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .heroachille h1{
+        font-family: Inria Serif;
+    }
+
+    .designers {
+        background-color: #D7D5CB;
+        padding: 40px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .privacypolicy2{
+        height: 65vh;
+    }
+}
